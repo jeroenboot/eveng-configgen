@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<lab name="Fides-LCM" version="1" scripttimeout="300" lock="0">
+    <topology>
+        <nodes>
+            <node id="1" name="xrv1" type="qemu" template="xrv" image="xrv-k9-6.1.2" console="telnet" cpu="1" cpulimit="0" ram="2048" ethernet="8" uuid="be34e985-6703-4558-b15e-aec19bb8874d" delay="0" icon="MPLS.png" config="0" left="549" top="228">
+                <interface id="1" name="Gi0/0/0/0" type="ethernet" network_id="1"/>
+                <interface id="2" name="Gi0/0/0/1" type="ethernet" network_id="14"/>
+                <interface id="3" name="Gi0/0/0/2" type="ethernet" network_id="25"/>
+            </node>
+            <node id="2" name="xrv2" type="qemu" template="xrv" image="xrv-k9-6.1.2" console="telnet" cpu="1" cpulimit="0" ram="2048" ethernet="8" uuid="04cb1c87-402e-4fa9-a579-781cdbda6c45" delay="0" icon="MPLS.png" config="0" left="645" top="186">
+                <interface id="1" name="Gi0/0/0/0" type="ethernet" network_id="1"/>
+                <interface id="2" name="Gi0/0/0/1" type="ethernet" network_id="13"/>
+                <interface id="3" name="Gi0/0/0/2" type="ethernet" network_id="27"/>
+            </node>
+            <node id="3" name="xrv3" type="qemu" template="xrv" image="xrv-k9-6.1.2" console="telnet" cpu="1" cpulimit="0" ram="2048" ethernet="8" uuid="8942803f-d4db-4da6-8c1b-f80ef95531eb" delay="0" icon="MPLS.png" config="0" left="1137" top="186">
+                <interface id="1" name="Gi0/0/0/0" type="ethernet" network_id="2"/>
+                <interface id="2" name="Gi0/0/0/1" type="ethernet" network_id="16"/>
+                <interface id="3" name="Gi0/0/0/2" type="ethernet" network_id="27"/>
+            </node>
+            <node id="4" name="xrv4" type="qemu" template="xrv" image="xrv-k9-6.1.2" console="telnet" cpu="1" cpulimit="0" ram="2048" ethernet="8" uuid="d5995f03-27a1-49bb-8c5e-0ad6f6f7b30d" delay="0" icon="MPLS.png" config="0" left="1227" top="264">
+                <interface id="1" name="Gi0/0/0/0" type="ethernet" network_id="2"/>
+                <interface id="2" name="Gi0/0/0/1" type="ethernet" network_id="15"/>
+                <interface id="3" name="Gi0/0/0/2" type="ethernet" network_id="26"/>
+            </node>
+            <node id="5" name="xrv5" type="qemu" template="xrv" image="xrv-k9-6.1.2" console="telnet" cpu="1" cpulimit="0" ram="2048" ethernet="8" uuid="c495b76b-0eb9-464b-9dc4-d0dfccc7f5e0" delay="0" icon="MPLS.png" config="0" left="1224" top="579">
+                <interface id="1" name="Gi0/0/0/0" type="ethernet" network_id="3"/>
+                <interface id="2" name="Gi0/0/0/1" type="ethernet" network_id="17"/>
+                <interface id="3" name="Gi0/0/0/2" type="ethernet" network_id="26"/>
+                <interface id="4" name="Gi0/0/0/3" type="ethernet" network_id="31"/>
+            </node>
+            <node id="6" name="xrv6" type="qemu" template="xrv" image="xrv-k9-6.1.2" console="telnet" cpu="1" cpulimit="0" ram="2048" ethernet="8" uuid="0d72cb28-0705-459d-abbc-7fffe7344202" delay="0" icon="MPLS.png" config="0" left="1230" top="687">
+                <interface id="1" name="Gi0/0/0/0" type="ethernet" network_id="3"/>
+                <interface id="2" name="Gi0/0/0/1" type="ethernet" network_id="18"/>
+                <interface id="3" name="Gi0/0/0/2" type="ethernet" network_id="28"/>
+            </node>
+            <node id="7" name="xrv7" type="qemu" template="xrv" image="xrv-k9-6.1.2" console="telnet" cpu="1" cpulimit="0" ram="2048" ethernet="8" uuid="716af212-0428-4573-b845-4601db0cb1f1" delay="0" icon="MPLS.png" config="0" left="1236" top="1053">
+                <interface id="1" name="Gi0/0/0/0" type="ethernet" network_id="4"/>
+                <interface id="2" name="Gi0/0/0/1" type="ethernet" network_id="19"/>
+                <interface id="3" name="Gi0/0/0/2" type="ethernet" network_id="28"/>
+            </node>
+            <node id="8" name="xrv8" type="qemu" template="xrv" image="xrv-k9-6.1.2" console="telnet" cpu="1" cpulimit="0" ram="2048" ethernet="8" uuid="cf44d0d4-6658-4328-b5ee-13bf9a12f93d" delay="0" icon="MPLS.png" config="0" left="1143" top="1125">
+                <interface id="1" name="Gi0/0/0/0" type="ethernet" network_id="4"/>
+                <interface id="2" name="Gi0/0/0/1" type="ethernet" network_id="20"/>
+                <interface id="3" name="Gi0/0/0/2" type="ethernet" network_id="29"/>
+            </node>
+            <node id="9" name="xrv9" type="qemu" template="xrv" image="xrv-k9-6.1.2" console="telnet" cpu="1" cpulimit="0" ram="2048" ethernet="8" uuid="57dc199f-0265-40d5-86fa-f42f2cc7644c" delay="0" icon="MPLS.png" config="0" left="639" top="1128">
+                <interface id="1" name="Gi0/0/0/0" type="ethernet" network_id="5"/>
+                <interface id="2" name="Gi0/0/0/1" type="ethernet" network_id="21"/>
+                <interface id="3" name="Gi0/0/0/2" type="ethernet" network_id="29"/>
+            </node>
+            <node id="10" name="xrv10" type="qemu" template="xrv" image="xrv-k9-6.1.2" console="telnet" cpu="1" cpulimit="0" ram="2048" ethernet="8" uuid="9eabfd5d-6b04-41b3-ad69-5b1867bdf280" delay="0" icon="MPLS.png" config="0" left="558" top="1023">
+                <interface id="1" name="Gi0/0/0/0" type="ethernet" network_id="5"/>
+                <interface id="2" name="Gi0/0/0/1" type="ethernet" network_id="22"/>
+                <interface id="3" name="Gi0/0/0/2" type="ethernet" network_id="30"/>
+            </node>
+            <node id="11" name="xrv11" type="qemu" template="xrv" image="xrv-k9-6.1.2" console="telnet" cpu="1" cpulimit="0" ram="2048" ethernet="8" uuid="28e1680d-625d-422d-9b27-70e9b41198ba" delay="0" icon="MPLS.png" config="0" left="549" top="708">
+                <interface id="1" name="Gi0/0/0/0" type="ethernet" network_id="6"/>
+                <interface id="2" name="Gi0/0/0/1" type="ethernet" network_id="23"/>
+                <interface id="3" name="Gi0/0/0/2" type="ethernet" network_id="30"/>
+            </node>
+            <node id="12" name="xrv12" type="qemu" template="xrv" image="xrv-k9-6.1.2" console="telnet" cpu="1" cpulimit="0" ram="2048" ethernet="8" uuid="d27c9a99-dc60-486b-94ca-6f40bd8a56df" delay="0" icon="MPLS.png" config="0" left="549" top="570">
+                <interface id="1" name="Gi0/0/0/0" type="ethernet" network_id="6"/>
+                <interface id="2" name="Gi0/0/0/1" type="ethernet" network_id="24"/>
+                <interface id="3" name="Gi0/0/0/2" type="ethernet" network_id="25"/>
+                <interface id="4" name="Gi0/0/0/3" type="ethernet" network_id="31"/>
+            </node>
+            <node id="13" name="xrv13" type="qemu" template="xrv" image="xrv-k9-6.1.2" console="telnet" cpu="1" cpulimit="0" ram="2048" ethernet="4" uuid="f9b9bcb3-d753-4d0a-a837-9a1b4de107fe" delay="0" icon="XR.png" config="0" left="444" top="135">
+                <interface id="1" name="Gi0/0/0/0" type="ethernet" network_id="8"/>
+                <interface id="2" name="Gi0/0/0/1" type="ethernet" network_id="14"/>
+            </node>
+            <node id="14" name="xrv14" type="qemu" template="xrv" image="xrv-k9-6.1.2" console="telnet" cpu="1" cpulimit="0" ram="2048" ethernet="4" uuid="c7d1f1ce-6b2d-440b-a2c5-955728342e70" delay="0" icon="XR.png" config="0" left="561" top="81">
+                <interface id="1" name="Gi0/0/0/0" type="ethernet" network_id="8"/>
+                <interface id="2" name="Gi0/0/0/1" type="ethernet" network_id="13"/>
+            </node>
+            <node id="15" name="xrv15" type="qemu" template="xrv" image="xrv-k9-6.1.2" console="telnet" cpu="1" cpulimit="0" ram="2048" ethernet="4" uuid="0407413b-0638-4c30-bfef-f64d9f1ab12a" delay="0" icon="XR.png" config="0" left="1218" top="84">
+                <interface id="1" name="Gi0/0/0/0" type="ethernet" network_id="9"/>
+                <interface id="2" name="Gi0/0/0/1" type="ethernet" network_id="16"/>
+            </node>
+            <node id="16" name="xrv16" type="qemu" template="xrv" image="xrv-k9-6.1.2" console="telnet" cpu="1" cpulimit="0" ram="2048" ethernet="4" uuid="28c0bae6-1a52-4f31-a2ae-9087494b7041" delay="0" icon="XR.png" config="0" left="1305" top="144">
+                <interface id="1" name="Gi0/0/0/0" type="ethernet" network_id="9"/>
+                <interface id="2" name="Gi0/0/0/1" type="ethernet" network_id="15"/>
+            </node>
+            <node id="17" name="xrv17" type="qemu" template="xrv" image="xrv-k9-6.1.2" console="telnet" cpu="1" cpulimit="0" ram="2048" ethernet="4" uuid="f6621f33-52b6-4aaa-8ff4-88a18f12c20b" delay="0" icon="XR.png" config="0" left="1362" top="570">
+                <interface id="1" name="Gi0/0/0/0" type="ethernet" network_id="10"/>
+                <interface id="2" name="Gi0/0/0/1" type="ethernet" network_id="17"/>
+            </node>
+            <node id="18" name="xrv18" type="qemu" template="xrv" image="xrv-k9-6.1.2" console="telnet" cpu="1" cpulimit="0" ram="2048" ethernet="4" uuid="9b23f489-aebf-44f8-9695-ecc1fcd85908" delay="0" icon="XR.png" config="0" left="1362" top="687">
+                <interface id="1" name="Gi0/0/0/0" type="ethernet" network_id="10"/>
+                <interface id="2" name="Gi0/0/0/1" type="ethernet" network_id="18"/>
+            </node>
+            <node id="19" name="xrv19" type="qemu" template="xrv" image="xrv-k9-6.1.2" console="telnet" cpu="1" cpulimit="0" ram="2048" ethernet="4" uuid="e76736a8-21a1-4ee1-8e44-3057dc0f8209" delay="0" icon="XR.png" config="0" left="1332" top="1131">
+                <interface id="1" name="Gi0/0/0/0" type="ethernet" network_id="11"/>
+                <interface id="2" name="Gi0/0/0/1" type="ethernet" network_id="19"/>
+            </node>
+            <node id="20" name="xrv20" type="qemu" template="xrv" image="xrv-k9-6.1.2" console="telnet" cpu="1" cpulimit="0" ram="2048" ethernet="4" uuid="81ce1da6-455a-47f0-a106-261cb6eb6b68" delay="0" icon="XR.png" config="0" left="1239" top="1206">
+                <interface id="1" name="Gi0/0/0/0" type="ethernet" network_id="11"/>
+                <interface id="2" name="Gi0/0/0/1" type="ethernet" network_id="20"/>
+            </node>
+            <node id="21" name="xrv21" type="qemu" template="xrv" image="xrv-k9-6.1.2" console="telnet" cpu="1" cpulimit="0" ram="2048" ethernet="4" uuid="459a5e11-2089-48e8-9f2a-727b16fd7349" delay="0" icon="XR.png" config="0" left="537" top="1212">
+                <interface id="1" name="Gi0/0/0/0" type="ethernet" network_id="12"/>
+                <interface id="2" name="Gi0/0/0/1" type="ethernet" network_id="21"/>
+            </node>
+            <node id="22" name="xrv22" type="qemu" template="xrv" image="xrv-k9-6.1.2" console="telnet" cpu="1" cpulimit="0" ram="2048" ethernet="4" uuid="e616ec54-f2bb-455a-83f9-ad6c832cdac6" delay="0" icon="XR.png" config="0" left="453" top="1098">
+                <interface id="1" name="Gi0/0/0/0" type="ethernet" network_id="12"/>
+                <interface id="2" name="Gi0/0/0/1" type="ethernet" network_id="22"/>
+            </node>
+            <node id="23" name="xrv23" type="qemu" template="xrv" image="xrv-k9-6.1.2" console="telnet" cpu="1" cpulimit="0" ram="2048" ethernet="4" uuid="78e15764-2395-4f0a-a902-8cb68d262421" delay="0" icon="XR.png" config="0" left="399" top="702">
+                <interface id="1" name="Gi0/0/0/0" type="ethernet" network_id="7"/>
+                <interface id="2" name="Gi0/0/0/1" type="ethernet" network_id="23"/>
+            </node>
+            <node id="24" name="xrv24" type="qemu" template="xrv" image="xrv-k9-6.1.2" console="telnet" cpu="1" cpulimit="0" ram="2048" ethernet="4" uuid="d3c4cdd8-c5c4-4ce8-8d31-b90a568b4796" delay="0" icon="XR.png" config="0" left="402" top="573">
+                <interface id="1" name="Gi0/0/0/0" type="ethernet" network_id="7"/>
+                <interface id="2" name="Gi0/0/0/1" type="ethernet" network_id="24"/>
+            </node>
+        </nodes>
+        <networks>
+            <network id="1" type="bridge" name="Net-xrv1iface_1" left="609" top="268" visibility="0"/>
+            <network id="2" type="bridge" name="Net-xrv3iface_1" left="1197" top="226" visibility="0"/>
+            <network id="3" type="bridge" name="Net-xrv5iface_1" left="1287" top="658" visibility="0"/>
+            <network id="4" type="bridge" name="Net-xrv7iface_1" left="1239" top="1099" visibility="0"/>
+            <network id="5" type="bridge" name="Net-xrv9iface_1" left="699" top="1168" visibility="0"/>
+            <network id="6" type="bridge" name="Net-xrv11iface_1" left="609" top="748" visibility="0"/>
+            <network id="7" type="bridge" name="Net-xrv24iface_1" left="462" top="613" visibility="0"/>
+            <network id="8" type="bridge" name="Net-xrv14iface_1" left="621" top="121" visibility="0"/>
+            <network id="9" type="bridge" name="Net-xrv15iface_1" left="1278" top="124" visibility="0"/>
+            <network id="10" type="bridge" name="Net-xrv17iface_1" left="1422" top="652" visibility="0"/>
+            <network id="11" type="bridge" name="Net-xrv19iface_1" left="1365" top="1174" visibility="0"/>
+            <network id="12" type="bridge" name="Net-xrv21iface_1" left="597" top="1252" visibility="0"/>
+            <network id="13" type="bridge" name="Net-xrv14iface_2" left="621" top="121" visibility="0"/>
+            <network id="14" type="bridge" name="Net-xrv13iface_2" left="504" top="175" visibility="0"/>
+            <network id="15" type="bridge" name="Net-xrv16iface_2" left="1365" top="184" visibility="0"/>
+            <network id="16" type="bridge" name="Net-xrv15iface_2" left="1278" top="124" visibility="0"/>
+            <network id="17" type="bridge" name="Net-xrv17iface_2" left="1422" top="652" visibility="0"/>
+            <network id="18" type="bridge" name="Net-xrv18iface_2" left="1422" top="769" visibility="0"/>
+            <network id="19" type="bridge" name="Net-xrv19iface_2" left="1365" top="1174" visibility="0"/>
+            <network id="20" type="bridge" name="Net-xrv20iface_2" left="1272" top="1252" visibility="0"/>
+            <network id="21" type="bridge" name="Net-xrv9iface_2" left="699" top="1168" visibility="0"/>
+            <network id="22" type="bridge" name="Net-xrv10iface_2" left="618" top="1063" visibility="0"/>
+            <network id="23" type="bridge" name="Net-xrv11iface_2" left="609" top="748" visibility="0"/>
+            <network id="24" type="bridge" name="Net-xrv12iface_2" left="609" top="610" visibility="0"/>
+            <network id="25" type="bridge" name="Net-xrv1iface_3" left="609" top="268" visibility="0"/>
+            <network id="26" type="bridge" name="Net-xrv4iface_3" left="1287" top="304" visibility="0"/>
+            <network id="27" type="bridge" name="Net-xrv3iface_3" left="1197" top="226" visibility="0"/>
+            <network id="28" type="bridge" name="Net-xrv6iface_3" left="1290" top="766" visibility="0"/>
+            <network id="29" type="bridge" name="Net-xrv8iface_3" left="1176" top="1171" visibility="0"/>
+            <network id="30" type="bridge" name="Net-xrv11iface_3" left="609" top="748" visibility="0"/>
+            <network id="31" type="bridge" name="Net-xrv5iface_4" left="1284" top="619" visibility="0"/>
+        </networks>
+    </topology>
+</lab>
